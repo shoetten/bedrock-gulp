@@ -45,7 +45,10 @@
     "psr-0": {"Bedrock\\Installer": "scripts"}
   },
   "scripts": {
-    "post-install-cmd": ["Bedrock\\Installer::addSalts"],
+    "post-install-cmd": [
+      "Bedrock\\Installer::addSalts",
+      "npm install"
+    ],
     "test": [
       "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
     ]

@@ -140,12 +140,12 @@ class Installer {
         // Set up some sensible defaults for env vars.
         $parentDirBasename = basename(dirname(static::$envFilePath));
         $wpEnv             = 'development';
-        $wpHomeUrl         = 'http://' . $parentDirBasename;
+        $wpHomeUrl         = 'http://' . $parentDirBasename . '.dev';
         $wpSiteUrl         = $wpHomeUrl . '/wp';
         $dbHost            = 'localhost';
         $dbName            = self::formatDatabaseName($parentDirBasename);
-        $dbUser            = 'homestead';
-        $dbPassword        = 'secret';
+        $dbUser            = 'root';
+        $dbPassword        = 'root';
 
         $vars['DB_HOST']     = static::$io->ask("Database host? [<comment>$dbHost</comment>]", $dbHost);
         $vars['DB_NAME']     = static::$io->ask("Database name? [<comment>$dbName</comment>]", $dbName);
