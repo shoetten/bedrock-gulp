@@ -1,11 +1,11 @@
 {
-  "name": "wordpress-gulp-starter-kit",
-  "version": "0.2.5",
-  "description": "A starter kit for developing WordPress themes with Gulp",
-  "homepage": "https://github.com/synapticism/wordpress-gulp-starter-kit",
+  "name": "bedrock-gulp",
+  "version": "0.0.1",
+  "description": "Wordpress boilerplate combining Bedrock and wordpress-gulp-starter-kit",
+  "homepage": "https://github.com/shoetten/bedrock-gulp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/synapticism/wordpress-gulp-starter-kit.git"
+    "url": "https://github.com/shoetten/bedrock-gulp.git"
   },
   "keywords": [
     "wordpress",
@@ -20,7 +20,7 @@
     "browsersync",
     "livereload"
   ],
-  "author": "Alexander Synaptic <alexander@synapticism.com>",
+  "author": "Simon Hötten <simon@hoetten.org>",
   "license": "GPL-3.0",
   "main": "gulpfile.js",
   "private": true,

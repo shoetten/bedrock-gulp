@@ -1,9 +1,9 @@
 {
-  "name": "roots/bedrock",
+  "name": "shoetten/bedrock-gulp",
   "type": "project",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "description": "A modern WordPress stack",
-  "homepage": "https://roots.io/bedrock/",
+  "homepage": "https://github.com/shoetten/bedrock-gulp/",
   "authors": [
     {
       "name": "Scott Walkinshaw",
@@ -14,14 +14,23 @@
       "name": "Ben Word",
       "email": "ben@benword.com",
       "homepage": "https://github.com/retlehs"
+    },
+    {
+      "name": "Alexander Synaptic",
+      "email": "alexander@synapticism.com",
+      "homepage": "http://alexandersynaptic.com"
+    },
+    {
+      "name": "Simon Hötten",
+      "email": "simon@hoetten.org",
+      "homepage": "https://github.com/shoetten"
     }
   ],
   "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp", "gulp"
   ],
   "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
+    "issues": "https://github.com/shoetten/bedrock-gulp/issues",
   },
   "config": {
     "preferred-install": "dist"
