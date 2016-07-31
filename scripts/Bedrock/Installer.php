@@ -142,7 +142,7 @@ class Installer {
         $wpEnv             = 'development';
         $wpHomeUrl         = 'http://' . $parentDirBasename . '.dev';
         $wpSiteUrl         = $wpHomeUrl . '/wp';
-        $dbHost            = 'localhost';
+        $dbHost            = '127.0.0.1';
         $dbName            = self::formatDatabaseName($parentDirBasename);
         $dbUser            = 'root';
         $dbPassword        = 'root';
