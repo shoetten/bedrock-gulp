@@ -6,6 +6,14 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 
+# Development
+.sass-cache
+bower_components
+build
+dist
+assets/icons
+_normalize.scss
+
 # WordPress
 web/wp
 web/.htaccess
