@@ -21,6 +21,11 @@
       "homepage": "http://alexandersynaptic.com"
     },
     {
+      "name": "Matt Robitaille",
+      "email": "matt@anchour.com",
+      "homepage": "https://github.com/mrobit"
+    },
+    {
       "name": "Simon Hötten",
       "email": "simon@hoetten.org",
       "homepage": "https://github.com/shoetten"
@@ -30,10 +35,20 @@
     "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp", "gulp"
   ],
   "support": {
-    "issues": "https://github.com/shoetten/bedrock-gulp/issues",
+    "issues": "https://github.com/shoetten/bedrock-gulp/issues"
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "generate-salts": true
+  },
+  "autoload": {
+    "psr-0": {"Bedrock\\Installer": "scripts"}
+  },
+  "scripts": {
+    "post-install-cmd": ["Bedrock\\Installer::addSalts"],
+    "test": [
+      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ]
   },
   "repositories": [
     {
@@ -59,10 +74,5 @@
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"
-  },
-  "scripts": {
-    "test": [
-      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
-    ]
   }
 }
