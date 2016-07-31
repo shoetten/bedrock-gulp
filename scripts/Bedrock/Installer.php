@@ -141,7 +141,6 @@ class Installer {
         $parentDirBasename = basename(dirname(static::$envFilePath));
         $wpEnv             = 'development';
         $wpHomeUrl         = 'http://' . $parentDirBasename . '.dev';
-        $wpSiteUrl         = $wpHomeUrl . '/wp';
         $dbHost            = '127.0.0.1';
         $dbName            = self::formatDatabaseName($parentDirBasename);
         $dbUser            = 'root';
@@ -154,6 +153,8 @@ class Installer {
 
         $vars['WP_ENV']     = static::$io->ask("WP Environment? [<comment>$wpEnv</comment>]", $wpEnv);
         $vars['WP_HOME']    = static::$io->ask("WP Home URL? [<comment>$wpHomeUrl</comment>]", $wpHomeUrl);
+
+        $wpSiteUrl         = $vars['WP_HOME'] . '/wp';
         $vars['WP_SITEURL'] = static::$io->ask("WP Site (admin) URL? [<comment>$wpSiteUrl</comment>]", $wpSiteUrl);
 
         // Make sure we have a proper format for the database name.
