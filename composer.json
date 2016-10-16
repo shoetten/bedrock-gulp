@@ -38,15 +38,10 @@
     "issues": "https://github.com/shoetten/bedrock-gulp/issues"
   },
   "config": {
-    "preferred-install": "dist",
-    "generate-salts": true
-  },
-  "autoload": {
-    "psr-0": {"Bedrock\\Installer": "scripts"}
+    "preferred-install": "dist"
   },
   "scripts": {
     "post-install-cmd": [
-      "Bedrock\\Installer::addSalts",
       "npm install"
     ],
     "test": [
